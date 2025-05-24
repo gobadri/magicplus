@@ -169,7 +169,7 @@ Copyright 2025. All Rights Reserved.
   }
 
   iframe{
-    width: 100%;
+    max-width: 100%;
     aspect-ratio: 16/9;
     border: 0.5px solid var(--clr-neutral-300);
     border-radius: calc(2*var(--border-radius));
@@ -432,12 +432,12 @@ Copyright 2025. All Rights Reserved.
     }
 
     main{
-        width: 90%;
-        padding: 3rem .5rem;
+        width: 95%;
+        padding: 3rem .25rem;
     }
 
     .container{
-        max-width: 90%;
+        max-width: 95%;
     }
 
     .img-right .content{
@@ -461,9 +461,12 @@ Copyright 2025. All Rights Reserved.
         width: 100%;
       }
 
+    footer{
+      padding-block: calc(var(--gap) * 3);
+    }
+
     .footer-container{
       flex-direction: column-reverse;
-      padding-block: calc(var(--gap) * 3);
     }
 
     .footer-container img{
