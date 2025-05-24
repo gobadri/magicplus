@@ -61,6 +61,11 @@ Copyright 2025. All Rights Reserved.
   2. Header & Nav Styles
   ------------------------------------------------
   ----------------------------------------------*/
+
+  #featuredImg{
+    display: none;
+  }
+
   header{
     position: fixed;
     top: 0;
