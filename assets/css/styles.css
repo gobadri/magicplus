@@ -378,42 +378,7 @@ Copyright 2025. All Rights Reserved.
     justify-content: space-around;
   }
 
-  @media (width < 70em){
-    :root{
-        --border-radius: .5rem;
-        --flex-dir: column;
-        --gap: .5rem
-    }
-    main{
-        width: 90%;
-        padding: 3rem .5rem;
-    }
 
-    .container{
-        max-width: 90%;
-    }
-
-    .img-right .content{
-        width: 100%;
-    }
-
-    .img-left img{
-        grid-row: 1;
-        justify-self: center;
-    }
-
-    .img-left .content{
-        width: 100%;
-    }
-
-    .postdesign{
-        margin-block: calc(var(--gap) * 2);
-      }
-
-    .postdesign > img{
-        width: 100%;
-      }
-  }
 
   /*----------------------------------------------
   ------------------------------------------------
@@ -445,4 +410,62 @@ Copyright 2025. All Rights Reserved.
 
   .copyrights ul a{
     color: inherit;
+  }
+
+  .copyrights ul li{
+    font-size: calc(var(--fs) / 1.2);
+  }
+
+
+
+
+  @media (width < 70em){
+    :root{
+        --border-radius: .5rem;
+        --flex-dir: column;
+        --gap: .5rem
+    }
+
+    header img{
+      max-width: 3.125rem;
+    }
+
+    main{
+        width: 90%;
+        padding: 3rem .5rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .img-right .content{
+        width: 100%;
+    }
+
+    .img-left img{
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .img-left .content{
+        width: 100%;
+    }
+
+    .postdesign{
+        margin-block: calc(var(--gap) * 2);
+      }
+
+    .postdesign > img{
+        width: 100%;
+      }
+
+    .footer-container{
+      flex-direction: column-reverse;
+      padding-block: calc(var(--gap) * 3);
+    }
+
+    .footer-container img{
+      width: 25%;
+    }
   }
