@@ -464,7 +464,15 @@ Copyright 2025. All Rights Reserved.
 
     .postdesign > img{
         width: 100%;
-      }
+    }
+
+    .threeColors{
+      flex-direction: row !important;
+    }
+
+    #threeImg{
+      width: 70%;
+    }
 
     footer{
       padding-block: calc(var(--gap) * 3);
