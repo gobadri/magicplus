@@ -1,0 +1,448 @@
+/*************************************************
+**************************************************
+
+Website Name: Magic Plus Brand Guidline
+Copyright 2025. All Rights Reserved.
+
+------------------------------------------------
+----------------------------------------------*/
+
+:root{
+    --ff: "IBM Plex Sans Arabic", sans-serif;
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+
+    --clr-blue: #0000ff;
+    --clr-blue-300: #6666ff;
+    --clr-blue-100: #ccccff;
+    --clr-cyan: #00ffff;
+    --clr-cyan-300: #66ffff;
+    --clr-cyan-100: #ccffff;
+    --clr-burble: #ff00ff;
+    --clr-burble-300: #ff99ff;
+    --clr-burble-100: #ffccff;
+    --clr-gradient: linear-gradient(120deg,var(--clr-blue) 0%, var(--clr-cyan) 50%, var(--clr-burble) 100%);
+    --clr-neutral-100: #fff;
+    --clr-neutral-200: #dddddd;
+    --clr-neutral-300: #b3b3b3;
+    --clr-neutral-600: #4d4d4d;
+    --clr-neutral-800: #1a1a1a;
+    --clr-neutral-900: #000;
+
+    --border-radius: 1rem;
+    --flex-dir: row;
+    --gap: 2rem;
+    --fs: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*----------------------------------------------
+  ------------------------------------------------
+  1. Universal Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  body {
+    font-family: var(--ff);
+    background-color: var(--clr-neutral-300);
+  }
+  /*----------------------------------------------
+  ------------------------------------------------
+  2. Header & Nav Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  header{
+    position: fixed;
+    top: 0;
+    display: grid;
+    place-items: center;
+    background-color: var(--clr-neutral-100);
+    width: 100%;
+    filter: drop-shadow(0 2px 10px var(--clr-neutral-300));
+    padding: .5rem;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  header img{
+    max-width: 6rem;
+  }
+  /*----------------------------------------------
+  ------------------------------------------------
+  3. Main Body Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  main{
+    width: 80%;
+    background-color: var(--clr-neutral-100);
+    margin-inline: auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    padding: 10rem 5rem;
+    border-radius: var(--border-radius);
+  }
+
+  .container{
+    margin-inline: auto;
+    max-width: 80%;
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+  }
+
+  .page-title{
+    display: grid;
+    place-items: center;
+  }
+
+  h1{
+    color: var(--clr-blue);
+    font-weight: var(--fw-800);
+    font-size: calc(var(--fs) * 3);
+  }
+
+  h2{
+    color: var(--clr-blue);
+    font-weight: var(--fw-600);
+    font-size: calc(var(--fs) * 1.5);
+    margin-block: var(--gap);
+  }
+
+  h3{
+    color: var(--clr-neutral-600);
+    font-weight: var(--fw-600);
+    font-size: calc(var(--fs) * 1.2);
+  }
+
+  h5{
+    color: var(--clr-neutral-600);
+    font-weight: var(--fw-600);
+    font-size: var(--fs);
+  }
+
+  p{
+    color: var(--clr-neutral-900);
+    font-weight: var(--fw-400);
+    font-size: calc(var(--fs) / 1.1);
+  }
+
+  .text-only{
+    width: 100%;
+  }
+
+  .img-right, .img-left{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: var(--gap);
+  }
+
+  .img-right img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    padding: var(--gap);
+    border: 0.5px solid var(--clr-neutral-300);
+    border-radius: calc(2*var(--border-radius));
+  }
+
+  .img-left img{
+    width: 35%;
+    justify-self: end;
+  }
+
+  .img-left .content{
+    width: 150%;
+  }
+
+  .img-right .content{
+    align-self: start;
+  }
+
+  iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0.5px solid var(--clr-neutral-300);
+    border-radius: calc(2*var(--border-radius));
+  }
+
+  .grid{
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    gap: var(--gap);
+  }
+
+  .grid-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: calc(var(--gap) / 2);
+  }
+
+  .grid-item{
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    gap: calc(var(--gap) / 3);
+    border: 0.5px solid var(--clr-neutral-300);
+    border-radius: var(--border-radius);
+  }
+
+  .grid-item img{
+    max-width: 80%;
+  }
+
+  .grid-item h5{
+    place-self: start;
+  }
+
+  section{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: var(--gap);
+  }
+
+  .gallery{
+    width: 100%;
+    display: grid;
+    gap: var(--gap);
+  }
+
+  .neutral200{
+    background-color: var(--clr-neutral-200);
+    border: none;
+  }
+
+  .neutral900{
+    background-color: var(--clr-neutral-900);
+    border: none;
+  }
+
+  .blue{
+    background-color: var(--clr-blue);
+    border: none;
+  }
+
+  .cyan{
+    background-color: var(--clr-cyan);
+    border: none;
+  }
+
+  .gradient{
+    background: linear-gradient(120deg, var(--clr-blue) 0%, var(--clr-cyan) 50%, var(--clr-burble) 100%);
+    border: none;
+  }
+
+  .img-top{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: var(--gap);
+  }
+
+  .img-top h3{
+    justify-self: start;
+    margin-top: calc(var(--gap) * 2);
+  }
+
+  .img-top img{
+    max-width: 100%;
+    border: 0.5px solid var(--clr-neutral-300);
+    border-radius: calc(2*var(--border-radius));
+  }
+
+  .two-columns{
+    display: flex;
+    flex-direction: var(--flex-dir);
+    gap: var(--gap);
+    justify-content: space-around;
+  }
+
+  .two-columns p{
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .post{
+    width: 100%;
+  }
+
+  .post h3{
+    justify-self: start;
+    margin-top: calc(var(--gap) * 2);
+  }
+
+  
+
+  .postdesign{
+    width: 100%;
+    display: flex;
+    flex-direction: var(--flex-dir);
+    gap: var(--gap);
+    margin-block: calc(var(--gap) * 1);
+    align-items: center;
+  }
+
+  .postdesign > img{
+    width: 30%;
+    padding: 0;
+    border-radius: calc(var(--border-radius) / 2);
+    border: 0.5px solid var(--clr-neutral-300);
+    
+  }
+
+  .postdesign p{
+    flex-grow: 1;
+    flex-basis: 0
+  }
+
+  .threeRows p:nth-child(1){
+    font-weight: var(--fw-600);
+  }
+
+  .threeRows p:nth-child(2){
+    font-weight: var(--fw-300);
+  }
+
+  .threeRows p:nth-child(3){
+    font-weight: var(--fw-100);
+  }
+
+  #threeImg{
+    border: none;
+  }
+
+  .threeBlue p:nth-child(1){
+    color: var(--clr-blue);
+  }
+
+  .threeBlue p:nth-child(2){
+    color: var(--clr-blue-300);
+  }
+
+  .threeBlue p:nth-child(3){
+    color: var(--clr-blue-100);
+  }
+
+  .threeCyan p:nth-child(1){
+    color: var(--clr-cyan);
+  }
+
+  .threeCyan p:nth-child(2){
+    color: var(--clr-cyan-300);
+  }
+
+  .threeCyan p:nth-child(3){
+    color: var(--clr-cyan-100);
+  }
+
+  .threePurple p:nth-child(1){
+    color: var(--clr-burble);
+  }
+
+  .threePurple p:nth-child(2){
+    color: var(--clr-burble-300);
+  }
+
+  .threePurple p:nth-child(3){
+    color: var(--clr-burble-100);
+  }
+
+  .card-content{
+    flex-grow: 1;
+    flex-basis: 0;
+    display: grid;
+    gap: var(--gap);
+    place-items: center;
+  }
+
+  .card-content img{
+    border-radius: 0;
+    border: none;
+  }
+
+  .cardss{
+    padding: var(--gap);
+    align-items: space-around;
+    justify-content: space-around;
+  }
+
+  @media (width < 70em){
+    :root{
+        --border-radius: .5rem;
+        --flex-dir: column;
+        --gap: .5rem
+    }
+    main{
+        width: 90%;
+        padding: 3rem .5rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .img-right .content{
+        width: 100%;
+    }
+
+    .img-left img{
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .img-left .content{
+        width: 100%;
+    }
+
+    .postdesign{
+        margin-block: calc(var(--gap) * 2);
+      }
+
+    .postdesign > img{
+        width: 100%;
+      }
+  }
+
+  /*----------------------------------------------
+  ------------------------------------------------
+  6. Footer Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  footer{
+    width: 100%;
+    background-color: var(--clr-neutral-100);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: var(--gap);
+  }
+
+  .footer-container{
+    display: flex;
+    gap: calc(var(--gap) * 2);
+    flex-direction: var(--flex-dir);
+    align-items: center;
+  }
+
+  .copyrights{
+    direction: ltr;
+  }
+
+  .copyrights ul{
+    font-family: var(--ff);
+    list-style: none;
+  }
+
+  .copyrights ul a{
+    color: inherit;
+  }
