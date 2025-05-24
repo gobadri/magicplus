@@ -423,7 +423,8 @@ Copyright 2025. All Rights Reserved.
     :root{
         --border-radius: .5rem;
         --flex-dir: column;
-        --gap: .5rem
+        --gap: .5rem;
+        --fs: .7em;
     }
 
     header img{
