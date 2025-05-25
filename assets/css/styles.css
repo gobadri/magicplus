@@ -54,12 +54,12 @@ html{
 
 ::-moz-selection {
   color: var(--clr-neutral-800);
-  background: linear-gradient(120deg, var(--clr-blue) 0%, var(--clr-cyan) 50%, var(--clr-burble) 100%);
+  background: var(--clr-blue);
 }
 
 ::selection {
   color: var(--clr-neutral-800);
-  background: linear-gradient(120deg, var(--clr-blue) 0%, var(--clr-cyan) 50%, var(--clr-burble) 100%);
+  background: var(--clr-blue);
 }
 
   /*----------------------------------------------
