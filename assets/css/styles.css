@@ -454,6 +454,8 @@ html{
     main{
         width: 95%;
         padding: 3rem .25rem;
+        margin-top: 5vh;
+        margin-bottom: 3vh;
     }
 
     .container{
