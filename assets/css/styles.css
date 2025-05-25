@@ -49,17 +49,17 @@ Copyright 2025. All Rights Reserved.
   }
 
 html{
-  cursor: url(cursor.svg), auto;
+  cursor: url(/cursor.svg), auto;
 }
 
 ::-moz-selection {
-  color: var(--clr-neutral-100);
-  background: var(--clr-burble);
+  color: var(--clr-neutral-800);
+  background: var(--clr-burble-300);
 }
 
 ::selection {
-  color: var(--clr-neutral-100);
-  background: var(--clr-burble);
+  color: var(--clr-neutral-800);
+  background: var(--clr-burble-300);
 }
 
   /*----------------------------------------------
