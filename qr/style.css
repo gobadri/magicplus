@@ -1,3 +1,7 @@
+:root{
+    --fs: 1em;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -61,6 +65,7 @@ a{
     text-decoration: none;
     color: white;
     font-weight: 600;
+    font-size: var(--fs);
 }
 
 li:hover a{
@@ -82,4 +87,13 @@ li:hover  .socialmediaLogo{
     min-width: 80%;
     bottom: 1.7rem;
     left: 0;
+}
+
+@media (width < 75em){
+ :root{
+    font-size: .7em;
+ }
+ body{
+    padding: 1rem;
+ }
 }
