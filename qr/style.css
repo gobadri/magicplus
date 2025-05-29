@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.wrap{
+    background-color: rgb(36, 36, 36);
+    border-radius: 2rem;
+    display: grid;
+    place-content: center;
+    gap: 3rem;
+    padding: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrap img{
+    width: 15rem;
+    margin-inline: auto;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    list-style: none;
+}
+
+.list-item{
+    background-color: rgb(87, 87, 87);
+    border-radius: 1rem;
+    padding: 0;
+
+    transition: all 350ms ease-in-out;
+}
+
+.list-item:hover{
+    background-color: rgb(201, 201, 201);
+}
+
+a{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+
+    padding: 1rem 3rem 1rem 3rem;
+
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+li:hover a{
+    color: rgb(73, 73, 73);
+}
+
+.socialmediaLogo{
+    max-width: 3rem;
+    filter: brightness(0) invert(1);
+    transition: filter 350ms ease-in-out;
+}
+
+li:hover  .socialmediaLogo{
+    filter: brightness(100%) invert(0);
+}
+
+.slogan{
+    position: absolute;
+    min-width: 80%;
+    bottom: 1.7rem;
+    left: 0;
+}
