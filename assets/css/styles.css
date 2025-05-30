@@ -61,6 +61,36 @@ html{
   background: var(--clr-burble-300);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scroll Bar */
+
+/* Track */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 80%;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 100vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88e5e6;
+  border-radius: 100vw;
+  border: solid 2px #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e68892;
+}
+
   /*----------------------------------------------
   ------------------------------------------------
   1. Universal Styles
