@@ -1,9 +1,8 @@
 /*************************************************
 **************************************************
-
-Website Name: Magic Plus Brand Guidline
-Copyright 2025. All Rights Reserved.
-
+    Copyright © 2025 Magic Plus. All Rights Reserved.
+    Brand Identity Designer: @GoBadri
+    Brand Guidline | May 2025 | Version 1.0
 ------------------------------------------------
 ----------------------------------------------*/
 
@@ -54,7 +53,7 @@ html{
 
 ::-moz-selection {
   color: var(--clr-neutral-800);
-  background: var(--clr-burble-300);
+  background: var(--clr-blue-300);
 }
 
 ::selection {
@@ -203,6 +202,10 @@ html{
     gap: var(--gap);
   }
 
+  .grid h3{
+    justify-self: start;
+  }
+
   .grid-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -218,8 +221,20 @@ html{
     border-radius: var(--border-radius);
   }
 
+  .full-width{
+    width: 100% !important;
+    aspect-ratio: 1 / .8;
+    object-fit: cover;
+  }
+
+  .full-width-item{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
   .grid-item img{
-    max-width: 80%;
+    width: 80%;
   }
 
   .grid-item h5{
@@ -400,13 +415,13 @@ html{
 
 
 
+
   /*----------------------------------------------
   ------------------------------------------------
   6. Footer Styles
   ------------------------------------------------
   ----------------------------------------------*/
   footer{
-    position: sticky;
     width: 100%;
     background-color: var(--clr-neutral-100);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -455,8 +470,6 @@ html{
     main{
         width: 95%;
         padding: 3rem .25rem;
-        margin-top: 10vh;
-        margin-bottom: 2vh;
     }
 
     .container{
